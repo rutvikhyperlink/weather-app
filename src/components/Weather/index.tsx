@@ -69,6 +69,9 @@ const Weather = (props: any) => {
                 value={props.searchHistory}
                 placeholder="Search your city"
                 placeholderTextColor={`${props.Colors.text}90`}
+                onPress={() => {
+                  props.setIsClickCity(false);
+                }}
                 onChangeText={(text: any) => {
                   props.handleOnChangeSearch(text);
                 }}
