@@ -73,6 +73,7 @@ const Weather = (props: any) => {
                   props.setIsClickCity(false);
                 }}
                 onChangeText={(text: any) => {
+                  props.setIsClickCity(false);
                   props.handleOnChangeSearch(text);
                 }}
               />
